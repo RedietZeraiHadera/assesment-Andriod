@@ -34,8 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         var billList= listOf<BillsList>(person1,person2)
         binding.rvBills.layoutManager=LinearLayoutManager(this)
-        var adapter= Adapter(billList)
-        binding.rvBills.adapter=adapter
+        var adapter= (billList)
 
     }
 
